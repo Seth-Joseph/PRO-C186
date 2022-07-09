@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>:)</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!--RANDOM-->
+    <script src="https://unpkg.com/aframe-randomizer-components@^3.0.1/dist/aframe-randomizer-components.min.js"></script> 
+    <!--Spe particles-->
+    <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene onClick="window.location.reload()">
+      <a-text value="Click anywhere on the screen" position="-50 20 0" scale="6 6 6"></a-text>
+      <a-entity id="firework" random-position spe-particles="
+      color: yellow, red; distribution: disc; radius: 1; randomize-position: true; particle-count: 500; velocity: 1; velocity-spread: 18; drag: 1; max-age: 2; active-multiplier: 1000; size:1 1 1 0 ">
+      </a-entity>
+      
+      <a-entity id="firework" random-position spe-particles="
+      color: pink,orange; distribution: disc; radius: 1; randomize-position: true; particle-count: 500; velocity: 1; velocity-spread: 18; drag: 1; max-age: 2; active-multiplier: 1000; size:1 1 1 0 ">
+      </a-entity>
+      
+      <a-entity id="firework" random-position spe-particles="
+      color: lightblue, red; distribution: disc; radius: 1; randomize-position: true; particle-count: 500; velocity: 1; velocity-spread: 18; drag: 1; max-age: 2; active-multiplier: 1000; size:1 1 1 0 ">
+      </a-entity>
+      
+      <a-entity id="firework" random-position spe-particles="
+      color: lightgreen, pink; distribution: disc; radius: 1; randomize-position: true; particle-count: 500; velocity: 1; velocity-spread: 18; drag: 1; max-age: 2; active-multiplier: 1000; size:1 1 1 0 ">
+      </a-entity>
+
+      <a-sky color="#000000"></a-sky>
+      <a-camera position="0 0 30" look-controls-enabled="false"></a-camera>
+    </a-scene>
+  </body>
+</html>
